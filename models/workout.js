@@ -8,35 +8,29 @@ const workoutSchema = new Schema({
     trim: true,
     default: Date.now
   },
-  excercises: [
+  exercises: [
     {
       type: {
         type: String,
         trim: true
-      }
-    },
-    {
+      },
       name: {
         type: String,
         trim: true
-      }
-    },
-    {
+      },
+      distance: {
+        type: String,
+        trim: true
+      },
       duration: {
         type: Number,
-      }
-    },
-    {
+      },
       weight: {
         type: Number,
-      }
-    },
-    {
+      },
       reps: {
         type: Number,
-      }
-    },
-    {
+      },
       sets: {
         type: Number,
       }
